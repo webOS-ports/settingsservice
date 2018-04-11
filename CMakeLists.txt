@@ -104,6 +104,9 @@ install(FILES ${DB8_PERM_FILES} DESTINATION ${WEBOS_INSTALL_WEBOS_SYSCONFDIR}/se
 install(FILES ${DB8_KIND_FILES} DESTINATION ${WEBOS_INSTALL_WEBOS_SYSCONFDIR}/db/kinds)
 install(FILES ${DB8_PERM_FILES} DESTINATION ${WEBOS_INSTALL_WEBOS_SYSCONFDIR}/db/permissions)
 
+webos_configure_source_files(SETTINGSERVICE files/scripts/settings-service.sh)
+install(PROGRAMS ${SETTINGSERVICE} DESTINATION ${WEBOS_INSTALL_SBINDIR})
+
 string(TOUPPER ${CMAKE_BUILD_TYPE} _build_type)
 if (_build_type STREQUAL DEBUG)
   webos_add_compiler_flags(ALL -Werror)
