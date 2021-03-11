@@ -1,4 +1,4 @@
 [D-BUS Service]
 Name=com.lge.settingsservice
-Exec=/usr/bin/SettingsService
+Exec=/usr/sbin/SettingsService
 Type=static

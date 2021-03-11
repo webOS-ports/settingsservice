@@ -1,6 +1,6 @@
 {
     "role": {
-        "exeName":"/usr/bin/SettingsService",
+        "exeName":"/usr/sbin/SettingsService",
         "type": "regular",
         "allowedNames": ["com.lge.settingsservice"]
     },
